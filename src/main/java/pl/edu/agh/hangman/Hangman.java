@@ -55,5 +55,11 @@ public class Hangman {
     };
 
     public static void main(String[] args) {
+
+        Slowo slowo = new Slowo();
+        slowo.readFile("src/main/resources/slowa.txt");
+        System.out.println(slowo.Losowanie());
+
     }
+
 }
