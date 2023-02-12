@@ -23,8 +23,7 @@ public class Slowo {
             String line = null;
             while ((line = reader.readLine()) != null) {
                 if (!line.contains(" ")) {
-                    line.toLowerCase();
-                    slowa.add(line);
+                    slowa.add(line.toLowerCase());
                 }
             }
         } catch (IOException x) {
