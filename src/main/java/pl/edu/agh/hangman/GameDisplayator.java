@@ -29,8 +29,8 @@ public class GameDisplayator {
         System.out.println(this.hiddenWord.toString());
     }
 
-        public void print() {
-            System.out.println(HANGMANPICS[0]);
+        public void print(int parametr) {
+            System.out.println(HANGMANPICS[parametr]);
         }
 
 }
