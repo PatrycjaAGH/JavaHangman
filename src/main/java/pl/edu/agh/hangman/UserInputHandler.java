@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class UserInputHandler {
 
-    public boolean isGameActive;
     public String word;
     public GameDisplayator display;
 
     public UserInputHandler(GameDisplayator displayator, String word) {
         this.display = displayator;
-        this.isGameActive = true; // TODO to be stored in different class
         this.word = word;
     }
 
@@ -23,7 +21,7 @@ public class UserInputHandler {
 
             validateLetter(input); //TODO add if not single letter provided
 
-        } while (this.isGameActive);
+        } while (this.display.isGameActive);
 
         System.out.println("Bye!");
 

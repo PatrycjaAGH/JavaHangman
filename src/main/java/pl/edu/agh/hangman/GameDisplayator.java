@@ -10,8 +10,10 @@ public class GameDisplayator {
 
     public ArrayList<String> word;
     public ArrayList<String> hiddenWord;
+    public boolean isGameActive;
 
     public GameDisplayator(String word) {
+        this.isGameActive = true;
         this.word = new ArrayList<>(Arrays.asList(word.split("")));
         this.hiddenWord = new ArrayList<String>();
         
