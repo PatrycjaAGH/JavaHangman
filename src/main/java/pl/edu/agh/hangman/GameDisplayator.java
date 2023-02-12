@@ -4,6 +4,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static pl.edu.agh.hangman.Hangman.HANGMANPICS;
+
 public class GameDisplayator {
 
     public ArrayList<String> word;
@@ -27,5 +29,8 @@ public class GameDisplayator {
         System.out.println(this.hiddenWord.toString());
     }
 
+        public void print() {
+            System.out.println(HANGMANPICS[0]);
+        }
 
 }

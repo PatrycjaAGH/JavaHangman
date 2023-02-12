@@ -57,6 +57,7 @@ public class Hangman {
     };
 
     public static void main(String[] args) {
+
         GameDisplayator display = new GameDisplayator("test");
         UserInputHandler inputHandler = new UserInputHandler(display,"test");
         inputHandler.getUserInput();
