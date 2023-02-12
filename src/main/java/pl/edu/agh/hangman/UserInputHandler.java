@@ -33,7 +33,6 @@ public class UserInputHandler {
 
     public void validateLetter(String letter) {
         if(this.word.contains(letter)){
-            System.out.println("CONTAINS");
             this.display.revealLetters(letter);
         } else {
             System.out.println("NOT CONTAINS");
