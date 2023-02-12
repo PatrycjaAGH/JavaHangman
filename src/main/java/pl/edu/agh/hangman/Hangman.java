@@ -2,6 +2,8 @@ package pl.edu.agh.hangman;
 
 public class Hangman {
 
+    boolean isGameActive;
+
     public static final String[] HANGMANPICS = new String[]{
             "  +---+\n" +
                     "  |   |\n" +
@@ -56,9 +58,15 @@ public class Hangman {
 
     public static void main(String[] args) {
 
+
         Slowo slowo = new Slowo();
         slowo.readFile("src/main/resources/slowa.txt");
-        System.out.println(slowo.Losowanie());
+        String wylosowaneSlowo = slowo.Losowanie();
+        System.out.println(wylosowaneSlowo);
+
+        GameDisplayator display = new GameDisplayator(wylosowaneSlowo);
+        UserInputHandler inputHandler = new UserInputHandler(display,wylosowaneSlowo);
+        inputHandler.getUserInput();
 
     }
 
